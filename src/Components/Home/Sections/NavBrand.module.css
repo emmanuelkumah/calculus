@@ -13,7 +13,7 @@
 }
 .nav__brand {
   display: flex;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
 }
 .nav__brand h1 {
   font-size: 2rem;

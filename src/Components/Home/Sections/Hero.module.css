@@ -4,8 +4,60 @@
 }
 .hero__col {
   flex: 50%;
-  border: 1px solid red;
+  flex-wrap: wrap;
+  position: relative;
 }
 .hero__shift {
   margin-left: 300px;
+}
+.hero__desc {
+  padding: 2rem 4rem;
+}
+.hero__desc > h2 {
+  font-size: 3.5rem;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+.hero__desc > p {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+.hero__img {
+  position: relative;
+  bottom: 30px;
+  height: 90%;
+}
+.hero__bulbIcon1,
+.hero__bulbIcon2,
+.hero__bulbIcon3 {
+  width: 50px;
+  position: absolute;
+  top: 3%;
+}
+.hero__bulbIcon1 {
+  left: 20%;
+}
+.hero__bulbIcon2 {
+  right: 60%;
+}
+.hero__bulbIcon3 {
+  right: 50%;
+}
+.hero__btn {
+  width: 50%;
+  border: none;
+  background: #721121;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #fff;
+  border-radius: 5px;
+  border-bottom-left-radius: 20px;
+}
+.hero__subDesc {
+  margin-top: 1.4rem;
+  font-size: 1.5rem;
+  color: #721121;
 }

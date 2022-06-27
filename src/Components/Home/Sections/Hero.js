@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import classes from "./Hero.module.css";
+import heroImg from "../../../../src/images/hero.png";
+import bulbIcon from "../../../images/bulbIcon.png";
+import { gsap } from "gsap";
 
 function Hero({ isMenuClicked }) {
+  const heroTitleRef = useRef();
+
+  useEffect(() => {
+    gsap.to("heroTitleRef.current", {
+      duration: 2,
+      x: 100,
+    });
+  }, []);
+
   return (
     <div
       className={`${classes["hero__container"]} ${
@@ -9,10 +21,38 @@ function Hero({ isMenuClicked }) {
       }`}
     >
       <section className={classes["hero__col"]}>
-        <h2>Hero Section</h2>
+        <div className={classes["hero__desc"]}>
+          <h2 ref={heroTitleRef}>We give you the super power</h2>
+          <p>
+            Solve everyday problems from finance, sports and health with ease{" "}
+          </p>
+          <span className={classes["hero__subDesc"]}>
+            It will take you only few seconds
+          </span>
+          <div>
+            <button className={classes["hero__btn"]}>Try it now</button>
+          </div>
+        </div>
       </section>
       <section className={classes["hero__col"]}>
-        <h2>Section 3</h2>
+        <div className={classes["hero__icons"]}>
+          <img
+            src={bulbIcon}
+            alt={bulbIcon}
+            className={classes["hero__bulbIcon1"]}
+          />
+          <img
+            src={bulbIcon}
+            alt={bulbIcon}
+            className={classes["hero__bulbIcon2"]}
+          />
+          <img
+            src={bulbIcon}
+            alt={bulbIcon}
+            className={classes["hero__bulbIcon3"]}
+          />
+        </div>
+        <img src={heroImg} alt="calcImg" className={classes["hero__img"]} />
       </section>
     </div>
   );

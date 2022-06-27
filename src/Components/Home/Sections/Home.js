@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
+import Main from "./Main";
 
 function Home({ children, isMenuClicked }) {
   return (
@@ -7,6 +8,7 @@ function Home({ children, isMenuClicked }) {
       <div>{children}</div>
 
       <Hero isMenuClicked={isMenuClicked} />
+      <Main />
     </div>
   );
 }
