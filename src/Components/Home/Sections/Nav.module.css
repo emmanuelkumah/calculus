@@ -1,0 +1,51 @@
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.6s;
+}
+
+.sideNavOpen {
+  width: 300px;
+}
+
+.sideNav li {
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.sideNav li:hover,
+.sideNav li:active {
+  background-color: #fff;
+  color: #111;
+  transition: 0.5s ease-in-out;
+}
+.close__menu {
+  color: #fff;
+  font-size: 2rem;
+  float: right;
+  margin-right: 4rem;
+}
+.close__menu:hover,
+.close__menu:active {
+  background-color: #f3d8c7;
+  color: #111;
+}
+.navIcon {
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+}
+
+ul > li:first-of-type {
+  margin-top: 3.5rem;
+}

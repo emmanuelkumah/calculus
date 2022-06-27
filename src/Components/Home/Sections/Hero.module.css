@@ -1,0 +1,11 @@
+.hero__container {
+  display: flex;
+  flex-direction: row;
+}
+.hero__col {
+  flex: 50%;
+  border: 1px solid red;
+}
+.hero__shift {
+  margin-left: 300px;
+}
