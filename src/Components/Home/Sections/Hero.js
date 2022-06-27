@@ -5,12 +5,14 @@ import bulbIcon from "../../../images/bulbIcon.png";
 import { gsap } from "gsap";
 
 function Hero({ isMenuClicked }) {
-  const heroTitleRef = useRef();
+  const heroTitleRef = useRef(null);
 
   useEffect(() => {
-    gsap.to("heroTitleRef.current", {
-      duration: 2,
-      x: 100,
+    gsap.from(heroTitleRef.current, {
+      duration: 1,
+      autoAlpha: 0,
+      ease: "none",
+      delay: 2,
     });
   }, []);
 
