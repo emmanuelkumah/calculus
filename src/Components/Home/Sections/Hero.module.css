@@ -13,51 +13,47 @@
 .hero__desc {
   padding: 2rem 4rem;
 }
-.hero__desc > h2 {
+.hero__title {
   font-size: 3.5rem;
   font-family: "Quicksand", sans-serif;
   margin-bottom: 1rem;
   line-height: 1.1;
 }
+
 .hero__desc > p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
-  line-height: 1.5;
+  line-height: 1.1;
 }
 .hero__img {
   position: relative;
   bottom: 30px;
   height: 90%;
 }
-.hero__bulbIcon1,
-.hero__bulbIcon2,
-.hero__bulbIcon3 {
-  width: 50px;
+
+.hero__icons {
+  display: flex;
   position: absolute;
-  top: 3%;
-}
-.hero__bulbIcon1 {
-  left: 20%;
-}
-.hero__bulbIcon2 {
-  right: 60%;
-}
-.hero__bulbIcon3 {
-  right: 50%;
+  top: 8%;
+  z-index: 1;
+  left: 44%;
+  font-size: 2rem;
 }
 .hero__btn {
-  width: 50%;
+  width: 30%;
   border: none;
   background: #721121;
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
+  padding: 0.5rem;
+  /* padding: rem 0.5rem; */
+  font-size: 1.2rem;
   margin-top: 2rem;
   color: #fff;
   border-radius: 5px;
   border-bottom-left-radius: 20px;
 }
+
 .hero__subDesc {
   margin-top: 1.4rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #721121;
 }
