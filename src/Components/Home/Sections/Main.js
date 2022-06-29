@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Main.module.css";
 import { MdSportsBaseball, MdOutlineFastfood, MdMoney } from "react-icons/md";
 import { GiPillDrop } from "react-icons/gi";
+import Counter from "./Counter";
 
 function Main() {
   return (
@@ -92,6 +93,7 @@ function Main() {
             </div>
           </div>
         </section>
+        <Counter />
       </main>
     </div>
   );

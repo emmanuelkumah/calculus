@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className={classes["hero__container"]}>
+      <div className={classes["app__container"]}>
         <NavBrand setIsMenuClicked={setIsMenuClicked} />
         <Home isMenuClicked={isMenuClicked}>
           <Nav
