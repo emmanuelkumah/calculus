@@ -25,17 +25,26 @@
   font-weight: 100;
   line-height: 1.1;
 }
+.hero__imgContainer {
+  position: relative;
+}
 .hero__img {
   position: relative;
   bottom: 30px;
   height: 90%;
+  z-index: 1;
 }
-
+.office__img {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 50%;
+}
 .hero__icons {
   display: flex;
   position: absolute;
   top: 8%;
-  z-index: 1;
+  z-index: 3;
   left: 44%;
   font-size: 2rem;
 }
@@ -43,17 +52,22 @@
   width: 30%;
   border: none;
   background: #721121;
-  padding: 0.5rem;
-  /* padding: rem 0.5rem; */
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
   font-size: 1.2rem;
   margin-top: 2rem;
   color: #fff;
   border-radius: 5px;
-  border-bottom-left-radius: 20px;
+}
+.hero__btn:hover,
+.hero__btn:active {
+  cursor: pointer;
+  background-color: #326273;
 }
 
 .hero__subDesc {
-  margin-top: 1.4rem;
+  margin-top: 1.2rem;
   font-size: 1.2rem;
+  font-weight: 700;
   color: #721121;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Main from "./Main";
 
@@ -8,7 +9,8 @@ function Home({ children, isMenuClicked }) {
       <div>{children}</div>
 
       <Hero isMenuClicked={isMenuClicked} />
-      <Main />
+      <Main isMenuClicked={isMenuClicked} />
+      <Footer isMenuClicked={isMenuClicked} />
     </div>
   );
 }

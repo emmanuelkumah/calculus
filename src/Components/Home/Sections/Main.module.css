@@ -6,6 +6,9 @@
   background-color: #721121;
   padding: 2rem;
 }
+.main__shift {
+  margin-left: 300px;
+}
 .main__row {
   display: flex;
   flex-wrap: wrap;
@@ -18,24 +21,31 @@
 }
 .main__caption h2 {
   padding-right: 2rem;
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+  color: #ffcf00;
+  font-weight: 100;
 }
 .main__caption p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  padding-right: 3rem;
   line-height: 1.5;
+  font-weight: 100;
 }
 .main__content_row {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid white; */
 }
 .main__content_col {
+  padding-top: 3rem;
   flex: 50%;
 }
 .main__content_col article {
+  margin-bottom: 1.7rem;
   padding: 1rem;
+  font-weight: 100;
 }
 .main__content_icon {
   margin-right: 1rem;
+  color: #ffcf00;
 }

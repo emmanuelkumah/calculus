@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import classes from "./Hero.module.css";
 import heroImg from "../../../../src/images/hero.png";
+import office from "../../../images/office2.png";
 import { FcIdea } from "react-icons/fc";
 import { gsap } from "gsap";
 
@@ -48,15 +49,15 @@ function Hero({ isMenuClicked }) {
     );
   }, []);
 
-  const handleMouseEnter = () => {
-    btnRef.current.style.backgroundColor = "#FFCB77";
+  // const handleMouseEnter = () => {
+  //   btnRef.current.style.backgroundColor = "#FFCB77";
 
-    gsap.fromTo(
-      btnRef.current,
-      { y: 20 },
-      { duration: 1, y: -20, repeat: -1, yoyo: true }
-    );
-  };
+  //   gsap.fromTo(
+  //     btnRef.current,
+  //     { y: 20 },
+  //     { duration: 1, y: -20, repeat: -1, yoyo: true }
+  //   );
+  // };
 
   return (
     <div
@@ -79,7 +80,7 @@ function Hero({ isMenuClicked }) {
             <button
               ref={btnRef}
               className={classes["hero__btn"]}
-              onMouseEnter={handleMouseEnter}
+              // onMouseEnter={handleMouseEnter}
             >
               Try it now
             </button>
@@ -95,12 +96,15 @@ function Hero({ isMenuClicked }) {
             <FcIdea />
           </div>
         </div>
-        <img
-          ref={imgRef}
-          src={heroImg}
-          alt="calcImg"
-          className={classes["hero__img"]}
-        />
+        <div className={classes["hero__imgContainer"]}>
+          <img
+            ref={imgRef}
+            src={heroImg}
+            alt="calcImg"
+            className={classes["hero__img"]}
+          />
+          <img src={office} alt="office" className={classes["office__img"]} />
+        </div>
       </section>
     </div>
   );
